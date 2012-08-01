@@ -1,0 +1,26 @@
+mdBanner:
+  actAs:
+    Sortable: ~
+  columns:
+    id:
+      type: integer(4)
+      primary: true
+      autoincrement: true
+    nombre: 
+      type: string(128)
+      notnull: true
+    url:
+      type: string(250)
+      notnull: true
+    nueva_ventana:
+      type: boolean
+      default: false
+    activo:
+      type: boolean
+      default: true
+    image:
+      type: string(255)
+      notnull: false
+    sector:
+      type: enum
+      values: [slider]

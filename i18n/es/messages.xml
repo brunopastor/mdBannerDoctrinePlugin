@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd">
+<xliff version="1.0">
+  <file source-language="EN" target-language="es" datatype="plaintext" original="messages" date="2012-04-25T16:42:27Z" product-name="messages">
+    <header/>
+    <body>
+      <trans-unit id="1">
+        <source>mdBanner_La url debe comenzar con http://</source>
+        <target>La url debe comenzar con http://</target>
+      </trans-unit>
+      <trans-unit id="2">
+        <source>mdBanner_eliminar la imagen actual</source>
+        <target>eliminar la imagen actual</target>
+      </trans-unit>
+      <trans-unit id="3">
+        <source>mdBanner_Importante: Para la seccion "slider" se aconseja que la imagen tenga un ancho de 940 pixeles y un alto de 300 pixeles.</source>
+        <target>Importante: &lt;br /&gt;Para la seccion "slider" se aconseja que la imagen tenga un ancho de 940 pixeles y un alto de 300 pixeles.</target>
+      </trans-unit>     
+    </body>
+  </file>
+</xliff>
+
+
+
+
+
+
+

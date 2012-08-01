@@ -1,0 +1,9 @@
+md_banner:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                mdBanner
+    module:               mdBannersBackend
+    prefix_path:          /mdBannersBackend
+    column:               id
+    with_wildcard_routes: true
+    
