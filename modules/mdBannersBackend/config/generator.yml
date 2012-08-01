@@ -1,0 +1,39 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           mdBanner
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          md_banner
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+        nombre:         { label: Titulo }
+        url:            { label: Url }
+        nueva_ventana:  { label: Nueva Ventana }     
+        activo:         { label: Activo }
+        sector:         { label: Sector }
+      list:
+        hide: [id,position]
+        display: [_image, =nombre, sector]
+        fields:
+          imagen: { name: Imagen }
+        sort: [position]
+        object_actions:
+          promote:
+            action: promote
+          demote:
+            action: demote
+          _edit:    ~
+          _delete:  ~
+      filter:
+        class: false
+      form:    ~
+      edit:    ~
+      new:     ~
