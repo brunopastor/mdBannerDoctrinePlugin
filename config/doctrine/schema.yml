@@ -24,3 +24,5 @@ mdBanner:
     sector:
       type: enum
       values: [slider]
+    position:
+      type: integer(4)
