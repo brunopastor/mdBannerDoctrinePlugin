@@ -18,7 +18,7 @@ mdBanner:
     activo:
       type: boolean
       default: true
-    image:
+    filename:
       type: string(255)
       notnull: false
     sector:

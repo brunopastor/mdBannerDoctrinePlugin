@@ -6,9 +6,9 @@ require_once dirname(__FILE__).'/../lib/mdBannersBackendGeneratorHelper.class.ph
 /**
  * mdBannersBackend actions.
  *
- * @package    mvdhome
+ * @package    mdBannerDoctrinePlugin
  * @subpackage mdBannersBackend
- * @author     Gaston Caldeiro
+ * @author     Gaston Caldeiro <chugas488@gmail.com>
  * @version    SVN: $Id: actions.class.php 23810 2009-11-12 11:07:44Z Kris.Wallsmith $
  */
 class mdBannersBackendActions extends autoMdBannersBackendActions

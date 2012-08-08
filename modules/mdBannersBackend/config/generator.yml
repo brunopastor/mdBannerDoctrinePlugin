@@ -21,7 +21,7 @@ generator:
         sector:         { label: Sector }
       list:
         hide: [id,position]
-        display: [_image, =nombre, sector]
+        display: [_banner, =nombre, sector]
         fields:
           imagen: { name: Imagen }
         sort: [position]

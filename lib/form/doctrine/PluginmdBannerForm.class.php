@@ -3,9 +3,9 @@
 /**
  * PluginmdBanner form.
  *
- * @package    ##PROJECT_NAME##
+ * @package    mdBannerDoctrinePlugin
  * @subpackage form
- * @author     ##AUTHOR_NAME##
+ * @author     Gaston Caldeiro <chugas488@gmail.com>
  * @version    SVN: $Id: sfDoctrineFormPluginTemplate.php 23810 2009-11-12 11:07:44Z Kris.Wallsmith $
  */
 abstract class PluginmdBannerForm extends BasemdBannerForm
@@ -18,23 +18,23 @@ abstract class PluginmdBannerForm extends BasemdBannerForm
     
     $this->widgetSchema->setHelp('url', 'mdBanner_La url debe comenzar con http://');
     
-    $this->widgetSchema['image'] = new sfWidgetFormInputFileEditable(array(
-      'file_src'  => '/uploads/' . mdBanner::FOLDER_NAME . '/'.$this->getObject()->getImage(),
+    $this->widgetSchema['filename'] = new sfWidgetFormInputFileEditable(array(
+      'file_src'  => $this->getObject()->getSrcImage(),
       'is_image'  => true,
-      'edit_mode' => !$this->isNew(),
+      'edit_mode' => (!$this->isNew() && $this->getObject()->getFilename() != ""),
       'delete_label' => 'mdBanner_eliminar la imagen actual',
       'template'  => '<div class="md_auto_image">%file%<br />%input%<br />%delete_label% %delete%</div>',
     ));
     
-    $this->widgetSchema->setHelp('image', 'mdBanner_Importante: Para la seccion "slider" se aconseja que la imagen tenga un ancho de 940 pixeles y un alto de 300 pixeles.');
+    $this->widgetSchema->setHelp('filename', 'mdBanner_Importante: Para la seccion "slider" se aconseja que la imagen tenga un ancho de 940 pixeles y un alto de 300 pixeles.');
 
     
-    $this->validatorSchema['image'] = new sfValidatorFile(array(
+    $this->validatorSchema['filename'] = new sfValidatorFile(array(
       'required'   => false,
       'path'       => sfConfig::get('sf_upload_dir') . '/' . mdBanner::FOLDER_NAME,
-      'mime_types' => 'web_images',
+      'mime_types' => array('web_images','application/x-shockwave-flash')
     ));
  
-    $this->validatorSchema['image_delete'] = new sfValidatorPass();    
+    $this->validatorSchema['filename_delete'] = new sfValidatorPass();    
   }  
 }
