@@ -36,5 +36,5 @@ abstract class PluginmdBannerForm extends BasemdBannerForm
     ));
  
     $this->validatorSchema['filename_delete'] = new sfValidatorPass();    
-  }  
+  }
 }
