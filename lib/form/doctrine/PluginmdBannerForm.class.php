@@ -28,11 +28,19 @@ abstract class PluginmdBannerForm extends BasemdBannerForm
     
     $this->widgetSchema->setHelp('filename', 'mdBanner_Importante: Para la seccion "slider" se aconseja que la imagen tenga un ancho de 940 pixeles y un alto de 300 pixeles.');
 
+    $mime_types = array(
+      'image/jpeg',
+      'image/pjpeg',
+      'image/png',
+      'image/x-png',
+      'image/gif', 
+      'application/x-shockwave-flash'
+    );
     
     $this->validatorSchema['filename'] = new sfValidatorFile(array(
       'required'   => false,
       'path'       => sfConfig::get('sf_upload_dir') . '/' . mdBanner::FOLDER_NAME,
-      'mime_types' => array('web_images','application/x-shockwave-flash')
+      'mime_types' => $mime_types
     ));
  
     $this->validatorSchema['filename_delete'] = new sfValidatorPass();    
