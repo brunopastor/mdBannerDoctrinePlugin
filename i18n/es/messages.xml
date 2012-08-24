@@ -13,9 +13,9 @@
         <target>eliminar la imagen actual</target>
       </trans-unit>
       <trans-unit>
-        <source>mdBanner_Importante: Para la seccion "slider" se aconseja que la imagen tenga un ancho de 940 pixeles y un alto de 300 pixeles.</source>
-        <target>Importante: &lt;br /&gt;Para la seccion "slider" se aconseja que la imagen tenga un ancho de 940 pixeles y un alto de 300 pixeles.</target>
-      </trans-unit>     
+        <source>mdBanner_Importante</source>
+        <target>Importante: Para la seccion "slider" se aconseja que la imagen tenga un ancho de 940 pixeles y un alto de 300 pixeles.</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

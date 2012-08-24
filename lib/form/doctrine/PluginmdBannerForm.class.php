@@ -26,7 +26,7 @@ abstract class PluginmdBannerForm extends BasemdBannerForm
       'template'  => '<div class="md_auto_image">%file%<br />%input%<br />%delete_label% %delete%</div>',
     ));
     
-    $this->widgetSchema->setHelp('filename', 'mdBanner_Importante: Para la seccion "slider" se aconseja que la imagen tenga un ancho de 940 pixeles y un alto de 300 pixeles.');
+    $this->widgetSchema->setHelp('filename', 'mdBanner_Importante');
 
     $mime_types = array(
       'image/jpeg',
