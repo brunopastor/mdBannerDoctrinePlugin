@@ -31,13 +31,9 @@ function render_banner($md_banner, $options = array())
  */
 function render_image($md_banner, $options = array())
 {
-  if(!isset($options["width"]))
+  if(!isset($options["width"]) and !isset($options["height"]))
   {
     $options["width"] = 200;
-  }
-  if(!isset($options["height"]))
-  {
-    $options["height"] = 200;
   }
   if(isset($options["EXACT_DIMENTIONS"]))
   {
