@@ -2,10 +2,10 @@
 <?php include_partial('mdBannersBackend/assets') ?>
 
 <?php slot('banners'); ?>
-<?php slot('nav') ?>Banners > Editar<?php end_slot(); ?>
+<?php slot('nav') ?>Banners > <?php echo __('mdBanners_Edit'); ?><?php end_slot(); ?>
 
 <div id="sf_admin_container">
-  <h1><?php echo __('Banner_Edit', array(), 'messages') ?></h1>
+  <h1><?php echo __('mdBanners_Edit Form', array(), 'messages') ?></h1>
 
   <?php include_partial('mdBannersBackend/flashes') ?>
 

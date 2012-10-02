@@ -16,17 +16,17 @@ abstract class PluginmdBannerForm extends BasemdBannerForm
     
     unset($this['position']);
     
-    $this->widgetSchema->setHelp('url', 'mdBanner_La url debe comenzar con http://');
+    $this->widgetSchema->setHelp('url', 'mdBanners_La url debe comenzar con http://');
     
     $this->widgetSchema['filename'] = new sfWidgetFormInputFileEditable(array(
       'file_src'  => $this->getObject()->getSrcImage(),
       'is_image'  => true,
       'edit_mode' => (!$this->isNew() && $this->getObject()->getFilename() != ""),
-      'delete_label' => 'mdBanner_eliminar la imagen actual',
+      'delete_label' => 'mdBanners_eliminar la imagen actual',
       'template'  => '<div class="md_auto_image">%file%<br />%input%<br />%delete_label% %delete%</div>',
     ));
     
-    $this->widgetSchema->setHelp('filename', 'mdBanner_Importante: Para la seccion "slider" se aconseja que la imagen tenga un ancho de 940 pixeles y un alto de 300 pixeles.');
+    $this->widgetSchema->setHelp('filename', 'mdBanners_Importante');
 
     $mime_types = array(
       'image/jpeg',
