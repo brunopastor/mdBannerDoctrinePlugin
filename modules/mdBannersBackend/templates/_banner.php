@@ -2,8 +2,10 @@
 
     <img alt="" src="/mdBannerDoctrinePlugin/images/swf.jpg" width="80" height="80" />
 
-<?php else: ?>
+<?php else: 
+use_helper('mdMedia');
+?>
 
-    <img alt="" src="<?php echo mdWebImage::getUrl($md_banner->getSrc(), array(mdWebOptions::WIDTH => '270', mdWebOptions::HEIGHT => '90', mdWebOptions::CODE => mdWebCodes::RESIZECROP)); ?>" />
+    <img alt="" src="<?php echo get_url($md_banner->getSrc(), '270', '90','resize', true); ?>" />
 
 <?php endif; ?>

@@ -37,15 +37,15 @@ function render_image($md_banner, $options = array())
   }
   if(isset($options["EXACT_DIMENTIONS"]))
   {
-    $options["EXACT_DIMENTIONS"] = true;
+    $options["proportional"] = true;
   }
   else
   {
-    $options["EXACT_DIMENTIONS"] = false;
+    $options["proportional"] = false;
   }
   if(!isset($options["CODE"]))
   {
-    $options["CODE"] = mdWebCodes::CROPRESIZE;
+    $options["CODE"] = 'resize';
   }
   if(!isset($options["IMAGE"]))
   {
