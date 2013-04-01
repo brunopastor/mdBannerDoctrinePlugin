@@ -2,6 +2,9 @@ mdBannerDoctrinePlugin
 ======================
 
 For dynamic banner management
+Dependencias:
+  mastodontePlugin
+  mdMediaDoctrine2Plugin
 
 MODO DE INSTALACION:
 ---------------------
