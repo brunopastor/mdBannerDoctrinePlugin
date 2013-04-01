@@ -1,7 +1,7 @@
 <?php 
 use_helper('mdMedia');
 
-$code = $options['code'];
+$code = $options['CODE'];
 $width = (isset($options['width'])?$options['width']:null);
 $height = (isset($options['height'])?$options['height']:null);
 $proportional = (isset($options['proportional'])?$options['proportional']:false);
