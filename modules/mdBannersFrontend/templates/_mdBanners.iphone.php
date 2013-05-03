@@ -1,1 +1,1 @@
-<?php include_partial('mdBannersFrontend/' . $sector, array('banners' => $banners, 'sf_cache_key' => mdBanner::SF_CACHE_KEY . '_' . $sector . '_' . $sf_user->getCulture())); ?>
+<?php include_partial('mdBannersFrontend/' . $sector, array('banners' => $banners, 'sf_cache_key' => mdBanner::SF_CACHE_KEY . '_' . $sector . '_' . $sf_request->getRequestFormat() . '_' . $sf_user->getCulture())); ?>
