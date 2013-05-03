@@ -6,7 +6,6 @@
  * @package    mdBannerDoctrinePlugin
  * @subpackage form
  * @author     Gaston Caldeiro <chugas488@gmail.com>
- * @version    SVN: $Id: sfDoctrineFormPluginTemplate.php 23810 2009-11-12 11:07:44Z Kris.Wallsmith $
  */
 abstract class PluginmdBannerForm extends BasemdBannerForm
 {
@@ -22,7 +21,6 @@ abstract class PluginmdBannerForm extends BasemdBannerForm
       'file_src'  => $this->getObject()->getSrcImage(),
       'is_image'  => true,
       'edit_mode' => (!$this->isNew() && $this->getObject()->getFilename() != ""),
-      'delete_label' => 'mdBanner_eliminar la imagen actual',
       'template'  => '<div class="md_auto_image">%file%<br />%input%<br />%delete_label% %delete%</div>',
     ));
     
