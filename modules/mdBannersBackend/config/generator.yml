@@ -32,8 +32,7 @@ generator:
             action: demote
           _edit:    ~
           _delete:  ~
-      filter:
-        class: false
+      filter:  ~
       form:    ~
       edit:    ~
       new:     ~
